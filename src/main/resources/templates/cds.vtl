@@ -1,0 +1,10 @@
+<h1>CD Collection</h1>
+#if ($places)
+  <ul>
+    #foreach ($place in $places)
+      <li>$place.getDescription()</li>
+    #end
+  </ul>
+#else
+  <p>You haven't been anywhere!</p>
+#end
